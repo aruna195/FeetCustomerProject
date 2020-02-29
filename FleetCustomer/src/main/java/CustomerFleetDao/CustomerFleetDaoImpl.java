@@ -14,6 +14,7 @@ import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
 import com.project.db.datasource.DataBaseFactory;
+import com.project.fleet.Customer;
 import com.project.fleet.CustomerFleet;
 import com.project.fleet.FleetInfo;
 
@@ -51,6 +52,12 @@ public class CustomerFleetDaoImpl implements CustomerFleetDao {
 
 	@Override
 	public int getFleetId(int customer_id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int create(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

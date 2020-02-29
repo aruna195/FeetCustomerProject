@@ -9,6 +9,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
+import CustomerDao.CustomerDao;
+import CustomerDao.CustomerDaoImpl;
+
 @Configuration
 @PropertySource("classpath:application.properties")
 public class MyAppConfig {
@@ -42,4 +45,12 @@ public class MyAppConfig {
 	public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
 		return new PropertySourcesPlaceholderConfigurer();
 	}
-}
+	@Bean
+	public CustomerDao getCustomerDao() {
+		
+		return new CustomerDaoImpl();
+		
+	}
+	
+	}
+

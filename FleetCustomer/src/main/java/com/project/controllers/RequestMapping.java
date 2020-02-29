@@ -6,6 +6,8 @@ public @interface RequestMapping {
 
 	String value();
 
+	RequestMethod method();
+
 	
 	
 }
