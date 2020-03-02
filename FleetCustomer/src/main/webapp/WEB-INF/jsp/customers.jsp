@@ -50,9 +50,9 @@
          <td>${customer.business_phone}</td> 
          <td>${customer.personal_phone}</td>          
          <td>
-                <a href="/edit?id=${customer.id}">Edit</a>
+                <a href="/edit?id=${customer.customerId}">Edit</a>
                 &nbsp;&nbsp;&nbsp;
-                <a href="/delete?id=${customer.id}">Delete</a>
+                <a href="/delete/${customer.customerId}">Delete</a>
             </td>    
         
       </tr>  

@@ -14,10 +14,9 @@
 
 <body>
 <h2 style="color:green">New Customer </h2>
-<h2><a href="/save"> Customer List</a></h2>
-<form>
-    ID:          <input type="text" name="customer_id" /><br/>	
-	Name:          <input type="text" name="customer_name" /><br/>	
+<form method="post" action="save" >
+	ID:          <input type="text" name="id" /><br/>	
+	Name:          <input type="text" name="customerName" /><br/>	
 	Address_line_1:<input type="text" name="address_line_1" /><br/>	
 	City:          <input type="text" name="city" /><br/>		
 	Postal Code:   <input type="text" name="postal_code" /><br/>		

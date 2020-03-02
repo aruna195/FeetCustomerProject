@@ -22,9 +22,12 @@ public interface CustomerDao {
 	public Customer getCustomer(int customerId);
 
 	public void createCustomer(Customer customer);
+	
 	public void updateCustomer(Customer customer);
 
 	public void deleteCustomer(int customerId);
+	
+	public void editCustomer(Customer customer);
 
 	public List<Customer> findCustomerById(int customerId);
 	}

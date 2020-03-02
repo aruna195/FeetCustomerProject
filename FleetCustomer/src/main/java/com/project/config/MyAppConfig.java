@@ -11,6 +11,8 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 import CustomerDao.CustomerDao;
 import CustomerDao.CustomerDaoImpl;
+import FleetDao.FleetDao;
+import FleetDao.FleetDaoImpl;
 
 @Configuration
 @PropertySource("classpath:application.properties")
@@ -52,5 +54,11 @@ public class MyAppConfig {
 		
 	}
 	
+	@Bean
+	public FleetDao getFleetDao() {
+		
+		return new FleetDaoImpl();
+		
+	}
 	}
 

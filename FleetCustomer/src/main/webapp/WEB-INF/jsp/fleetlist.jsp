@@ -39,6 +39,11 @@
          <td>${fleet.category}</td> 
          <td>${fleet.serial_number}</td>      
             
+        <td>
+                <a href="/edit?id=${fleet.fleet_id}">Edit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/delete/${fleet.fleet_id}">Delete</a>
+            </td>    
         
       </tr>  
       </c:forEach>  
